@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>华鸿市场何艳玲猪肉下水摊床</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div id="app">
+    <h2 class="title">华鸿市场何艳玲猪肉下水摊床</h2>
+    <div class="list wrap">
+      <div class="item card" v-for="item in lists" :key="item.id">
+          <div class="card-name">{{item.name}}</div>
+          <div class="card-price">{{item.price}}</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="flex foot-card">
+        <div class="addr-desc">联系方式(微信同步)：</div>
+        <div class="addr-tel">12374125874</div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="./js/Bmob-2.2.2.min.js"></script>
+  <script src="./js/config.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          lists: window.lists,
+        }
+      },
+      created() {
+
+      },
+      methods: {
+
+      },
+    })
+  </script>
+</body>
+</html>
